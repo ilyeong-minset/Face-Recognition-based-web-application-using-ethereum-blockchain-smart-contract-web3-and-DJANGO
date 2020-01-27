@@ -1,0 +1,15 @@
+{% extends 'app_x/base.html' %}
+{% load staticfiles%}
+
+{% block content %}
+  <div class="main-content-header">
+      <h1 class="headerr" >Welcome to Face Recognition Web Application</h1>
+
+  </div>
+   <div class="col-md-6">
+        <a class="main_image" href="/detect"><img src="{% static 'images/face.jpg' %}" class="face" /></a>
+        <a class="btn btn-full" href="/detect">Start Face Recognition</a>
+   </div>
+  <!-- <img src="{% static 'images/face.jpg' %}" class="face"> -->
+
+{% endblock %}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sabre India</title>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="{% static '/css/master.css'%}">
+  </head>
+  <body>
+      <nav>
+        <div class="row clearfix">
+          <img src="{% static 'images/sabre.jpg' %}" class="logo">
+          <ul class="main-nav">
+            <li><a class="admin" href="{% url 'admin:index' %}">Admin</a></li>
+          </ul>
+
+        </div>
+      </nav>
+
+      {% block content %}
+
+
+      {% endblock %}
+
+
+  </body>
+</html>
