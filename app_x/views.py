@@ -13,11 +13,11 @@ from django.http import HttpResponse, HttpResponseRedirect
 def ethereum(request):
     ganache_url="http://127.0.0.1:7545"
     web3=Web3(Web3.HTTPProvider(ganache_url))
-    acct1="0x316B08860E958050f45755327C928Fb6940cF431"
+    acct1=""
     #acct1=Records.objects.get()
-    acct2="0xDF705903046bF9b38E0E6cb06c7794626357dd4b"
+    acct2=""
 
-    private_key="c3e146b8e2b9f3facc919358f36fbecdc4f4cd0987f8da1d8f9c1ef45f0696ff"
+    private_key=""
 
     nonce=web3.eth.getTransactionCount(acct1)
     tx={
